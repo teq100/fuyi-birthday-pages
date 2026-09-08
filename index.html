@@ -15,6 +15,13 @@
 @media(max-width:760px){main{padding:16px 16px 20px}header{margin-bottom:14px;font-size:12px;letter-spacing:.06em}.identity{gap:8px}.game,.team-stage{height:calc(100svh - 110px);min-height:700px;max-height:none}.hud{top:20px;left:20px;right:20px}.chapter{font-size:12px}.art{object-position:73% 50%;height:91%}.shade{background:linear-gradient(180deg,#08172899,transparent 65%,#071625b0)}.intro{left:8%;right:7%;top:16%}h1{font-size:clamp(30px,7.5vw,49px)}.intro p{max-width:250px;font-size:14px}.eyebrow{font-size:12px;margin-bottom:16px;letter-spacing:.14em}.dialog{left:6%;right:6%;bottom:28px;padding:24px 21px 22px;grid-template-columns:1fr;gap:16px;min-height:206px}.dialog-text{font-size:16px;min-height:60px}.dialog-help{display:none}.primary{width:100%;padding:13px 22px}.speaker{left:15px;font-size:12px}.corner-label{bottom:263px;font-size:12px}footer{font-size:12px;letter-spacing:.04em}footer .subfooter{display:none}.sound{font-size:12px;padding:8px}.date{letter-spacing:.1em}.team-stage{padding:26px 7% 30px}.team-top{display:block}.team-kicker{font-size:11px}.team-title{font-size:32px;margin-top:12px}.team-subtitle{font-size:14px}.team-hint{display:block;margin-top:12px}.team-heroes{left:1%;right:1%;bottom:175px;height:300px}.team-hero{width:33.33%;height:300px}.team-hero.sangqi{width:70%;margin-right:0}.team-portrait{transform:translateX(-50%) scale(.78);transform-origin:bottom center;bottom:14px}.team-label{font-size:13px;bottom:-1px}.team-label small{font-size:10px}.team-dialog{left:6%;right:6%;bottom:25px;padding:17px 16px;display:block}.team-dialog p{font-size:14px;min-height:50px}.team-actions{margin-top:12px}.team-actions button{flex:1;padding:10px 8px;font-size:13px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.game.started .art{transform:none}}
 </style>
+<style>
+/* Keep the scene layers stable across GitHub Pages/browser compositing. */
+.game>.art{z-index:0}
+.game>.shade{z-index:1}
+.game>.fireflies{z-index:2}
+.game>.corners,.game>.hud,.game>.intro,.game>.corner-label,.game>.dialog{z-index:3}
+</style>
 </head>
 <body>
 <main>
